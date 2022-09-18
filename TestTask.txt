@@ -28,7 +28,7 @@ SELECT department, sum_salary
 FROM dep_salary
 WHERE dep_salary.sum_salary = (SELECT MAX(sum_salary) FROM dep_salary);
 
- 4. Сотрудника, чье имя начинается на «Р» и заканчивается на «н».
+ 4. Сотрудник, чье имя начинается на «Р» и заканчивается на «н».
 
 SELECT *FROM employee
 WHERE employee_name LIKE 'Р%н';
